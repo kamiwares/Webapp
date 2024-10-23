@@ -1,4 +1,4 @@
-FROM centos:lastest 
+FROM centos:latest 
 MAINTAINER contact@waresiak.it
 RUN yum install -y httpd \
  zip\ 
