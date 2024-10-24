@@ -5,5 +5,6 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum install -y httpd
 WORKDIR /var/www/html/
 RUN touch index.html
+RUN echo "siemao"
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
